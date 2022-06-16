@@ -53,7 +53,7 @@ jobs:
     - name: Setup Docker
       uses: docker-practice/actions-setup-docker@master
       with:
-        docker_version: 20.10.15
+        docker_version: 20.10.14
 
     - name: Check docker version
       run: docker --version
