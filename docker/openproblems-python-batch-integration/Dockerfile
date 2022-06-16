@@ -17,6 +17,7 @@ rm -rf /var/lib/apt/lists/*
 # Install Python packages
 COPY ./docker/openproblems-python-batch-integration/requirements.txt ./requirements.txt
 RUN pip install --no-cache-dir -r requirements.txt
+RUN pip install --force annoy
 
 USER $NB_UID
 WORKDIR /home/$NB_USER
