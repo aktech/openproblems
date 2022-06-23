@@ -4,7 +4,7 @@ runners:
   - name: aws-runner
     cloud: aws
     instance_type: t3a.2xlarge
-    # Custom Ubuntu 20.04 image defined by openproblems/scripts/setup_ubuntu_ami.sh
+    # Custom Ubuntu 18.04 image
     machine_image: ami-0febc229056b2de48
     region: us-west-2
     # preemptible instances seems quite less reliable.
