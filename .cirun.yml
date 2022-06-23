@@ -6,7 +6,4 @@ runners:
     instance_type: t3a.2xlarge
     # Custom Ubuntu 18.04 image
     machine_image: ami-0febc229056b2de48
-    region: us-west-2
-    # preemptible instances seems quite less reliable.
-    preemptible: false
     workflow: .github/workflows/run_tests.yml
